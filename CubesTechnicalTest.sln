@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubesTechnicalTest", "CubesTechnicalTest\CubesTechnicalTest.csproj", "{A744EB96-6F1C-4D9C-8CFF-52DA79279122}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{17478A9C-000A-41DD-A9DA-E52CFF296E10}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{FFF922C4-7DF3-4BD4-ADA8-C88D771D1D58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubesTechnicalTest.Core", "CubesTechnicalTest.Core\CubesTechnicalTest.Core.csproj", "{09E62BF0-7F83-4C71-AD0A-58CD1B65A42C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{FA4741AA-6735-498F-9C8A-ACBD27ABDC87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A744EB96-6F1C-4D9C-8CFF-52DA79279122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A744EB96-6F1C-4D9C-8CFF-52DA79279122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A744EB96-6F1C-4D9C-8CFF-52DA79279122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A744EB96-6F1C-4D9C-8CFF-52DA79279122}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09E62BF0-7F83-4C71-AD0A-58CD1B65A42C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09E62BF0-7F83-4C71-AD0A-58CD1B65A42C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09E62BF0-7F83-4C71-AD0A-58CD1B65A42C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09E62BF0-7F83-4C71-AD0A-58CD1B65A42C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A744EB96-6F1C-4D9C-8CFF-52DA79279122} = {17478A9C-000A-41DD-A9DA-E52CFF296E10}
+		{09E62BF0-7F83-4C71-AD0A-58CD1B65A42C} = {FA4741AA-6735-498F-9C8A-ACBD27ABDC87}
+		{FA4741AA-6735-498F-9C8A-ACBD27ABDC87} = {17478A9C-000A-41DD-A9DA-E52CFF296E10}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDA9752F-9FD2-4275-9145-3ECA92B566B9}
+	EndGlobalSection
+EndGlobal
