@@ -5,9 +5,9 @@ using System.Text;
 
 namespace CubesTechnicalTest.Core.Interfaces
 {
-    public interface ICubeService
+    public interface IGeometryClient
     {
         bool IsIntersection(Cube cubeA, Cube cubeB);
-        double VolumenIntersection(Cube cubeA, Cube cubeB);
+        double VolumeIntersection(Cube cubeA, Cube cubeB);
     }
 }

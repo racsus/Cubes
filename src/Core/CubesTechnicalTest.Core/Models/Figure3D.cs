@@ -4,9 +4,10 @@ using System.Text;
 
 namespace CubesTechnicalTest.Core.Models
 {
-    public class Cube
+    public abstract class Figure3D
     {
         public string Name { get; set; }
-        public Coord Coord { get; set; }
+        public Coord Coord { get; set; }        
+
     }
 }

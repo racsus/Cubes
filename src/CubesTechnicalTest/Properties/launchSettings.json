@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CubesTechnicalTest": {
+      "commandName": "Project",
+      "commandLineArgs": "cubo1 2 2 2 2 cubo2 2 2 2 2"
+    }
+  }
+}

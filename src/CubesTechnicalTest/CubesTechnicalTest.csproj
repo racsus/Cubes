@@ -10,7 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CubesTechnicalTest.Core\CubesTechnicalTest.Core.csproj" />
+    <ProjectReference Include="..\Core\CubesTechnicalTest.Core\CubesTechnicalTest.Core.csproj" />
+    <ProjectReference Include="..\Infrastructure\Infrastructure.DependencyBuilder\Infrastructure.DependencyBuilder.csproj" />
   </ItemGroup>
 
 </Project>
