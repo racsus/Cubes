@@ -28,7 +28,7 @@ namespace CubesTechnicalTest.Core.Services
         }
 
         /// <summary>
-        /// Get the volume of the intersection taking the intersection points and calculating the volume of a cube (a * b * c)
+        /// Get the volume of the intersection taking the intersection points and calculating the volume of a intersected cube (a * b * c), "two cubes are parallel"
         /// </summary>
         /// <param name="a"></param>
         /// <param name="b"></param>
