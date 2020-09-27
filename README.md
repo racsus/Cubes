@@ -14,10 +14,10 @@ Max time: 1h._
 
 ## How to execute 
 
-CubesTechnicalTest.exe Cube1Name X Y Z Length Cube2Name X Y Z Length
-
-Cube1Name/Cube2Name: Names of the 2 cubes. (string)
-X Y Z: 3D Coordinates (double)
+CubesTechnicalTest.exe Cube1Name X Y Z Length Cube2Name X Y Z Length  
+  
+Cube1Name/Cube2Name: Names of the 2 cubes. (string)  
+X Y Z: 3D Coordinates (double)  
 Length: Length of the Cube edges.
 
 ## Arquitecture 
