@@ -1,5 +1,6 @@
 ﻿using CubesTechnicalTest.Core.Interfaces;
 using CubesTechnicalTest.Core.Services;
+using CubesTechnicalTest.Factories;
 using CubesTechnicalTest.Helpers;
 using Infrastructure.DependencyBuilder;
 using Microsoft.Extensions.Configuration;
@@ -21,20 +22,24 @@ namespace CubesTechnicalTest
             _serviceProvider = DependencyBuilderClient.Configure();
 
             //Parameters validation
-            var cubes = ArgumentValidationHelper.CheckParameters(args);
-
-            //Process execution
-            if ((cubes != null) && (cubes.Count == 2))
+            if (ArgumentValidationHelper.CheckParameters(args))
             {
-                var service = _serviceProvider.GetService<ICubeService>();
-                if (service.IsIntersection(cubes[0], cubes[1]))
+                var cube1 = CubeFactory.BuildCube(args[0], args[1], args[2], args[3], args[4]);
+                var cube2 = CubeFactory.BuildCube(args[5], args[6], args[7], args[8], args[9]);
+                //Process execution
+                if ((cube1 != null) && (cube2 != null))
                 {
-                    ConsoleLogHelper.ShowInfoMessage($"Cubes intersect.", System.ConsoleColor.Green);
-                    var volumeIntersecion = service.VolumeIntersection(cubes[0], cubes[1]);
-                    ConsoleLogHelper.ShowInfoMessage($"Intersected volume: {volumeIntersecion}", System.ConsoleColor.Green);
-                } else
-                {
-                    ConsoleLogHelper.ShowInfoMessage($"Cubes DON'T intersect.", System.ConsoleColor.Yellow);
+                    var service = _serviceProvider.GetService<ICubeService>();
+                    if (service.IsIntersection(cube1, cube2))
+                    {
+                        ConsoleLogHelper.ShowInfoMessage($"Cubes intersect.", System.ConsoleColor.Green);
+                        var volumeIntersecion = service.VolumeIntersection(cube1, cube2);
+                        ConsoleLogHelper.ShowInfoMessage($"Intersected volume: {volumeIntersecion}", System.ConsoleColor.Green);
+                    }
+                    else
+                    {
+                        ConsoleLogHelper.ShowInfoMessage($"Cubes DON'T intersect.", System.ConsoleColor.Yellow);
+                    }
                 }
             }
 
